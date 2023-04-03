@@ -79,16 +79,4 @@ def init(Machine_Type,Axes): # Returns a class with all of the toolpath commands
     return TOOLPATH_FUNCTIONS
 
 
-toolpath=init("mill",3)
 
-toolpath.Feed()
-toolpath.Set_Feed_Rate(15)
-toolpath.Z(2.17)
-toolpath.Set_Feed_Rate(60)
-toolpath.X(5.0)
-toolpath.Y(16.4500)
-toolpath.Z(5.0)
-
-
-
-print(toolpath.Toolpath)
